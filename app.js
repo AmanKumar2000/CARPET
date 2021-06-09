@@ -15,6 +15,12 @@ app.use(express.static("public"));
 
 app.get("/", function(req, res) {
 let v=10;
+  res.render("dupli",{});
+
+});
+
+app.get("/dupli", function(req, res) {
+let v=10;
   res.render("index",{});
 
 });
